@@ -24,6 +24,26 @@
 
     <section id="farm-management" class="border-b border-ivory-300 bg-white py-16">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            {{-- STARTER & BUNDLING NOTE --}}
+            <div class="mb-10 rounded-2xl border border-sage-300 bg-sage-50/70 p-5 text-forest-950">
+                <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                    <div>
+                        <span class="rounded-full bg-forest-800 px-3 py-0.5 text-[11px] font-bold uppercase tracking-wider text-sage-200">
+                            Model Bundling &amp; Paket Starter
+                        </span>
+                        <h2 class="mt-1.5 text-base font-bold text-forest-900">
+                            Langsung Dapatkan REGEN Farm Management dalam Paket Starter
+                        </h2>
+                        <p class="text-xs text-forest-800">
+                            Platform Farm Management &amp; Business Intelligence ini dapat dipakai sebagai sistem mandiri (software-only), maupun terbundling langsung saat Anda mengambil <strong>Paket Starter Hardware REGEN</strong> untuk efisiensi investasi awal kebun Anda.
+                        </p>
+                    </div>
+                    <a href="{{ route('contact') }}" class="shrink-0 rounded-xl bg-forest-900 px-4 py-2 text-xs font-semibold text-white hover:bg-forest-800">
+                        Cek Opsi Paket Starter &rarr;
+                    </a>
+                </div>
+            </div>
+
             <x-section-header
                 eyebrow="Modul F &bull; REGEN Farm Management"
                 title="10 Modul Operasional dari Pemetaan Petak hingga Penjualan"

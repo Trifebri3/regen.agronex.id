@@ -178,35 +178,70 @@
     <section class="border-b border-ivory-300 bg-white py-16 lg:py-20">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <x-section-header
-                eyebrow="04 &bull; Fleksibilitas Implementasi"
-                title="Modular Deployment vs. Integrated Ecosystem"
-                subtitle="Adopsi teknologi sesuai kesiapan kebun Anda hari ini, dan perluas tanpa migrasi ulang saat skala usaha berkembang."
+                eyebrow="04 &bull; Fleksibilitas Implementasi &amp; Paket Bundling"
+                title="Modular Deployment, Paket Starter &amp; Integrated Bundling"
+                subtitle="REGEN dirancang sebagai ekosistem produk yang dapat diadopsi satuan, paket bundling starter hemat modal, maupun implementasi korporat terintegrasi penuh tanpa hambatan migrasi."
             />
 
-            <div class="mt-10 grid gap-8 lg:grid-cols-2">
+            {{-- PROMINENT BUNDLING & STARTER NOTE --}}
+            <div class="mt-8 rounded-2xl border-2 border-forest-800 bg-forest-950 p-6 text-ivory-100 shadow-sm">
+                <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                    <div class="space-y-1">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="rounded-full bg-sage-400 px-3 py-0.5 text-xs font-bold uppercase tracking-wider text-forest-950">
+                                Model Distribusi Produk REGEN
+                            </span>
+                            <span class="rounded-full border border-forest-700 bg-forest-900 px-3 py-0.5 text-xs font-semibold text-sage-200">
+                                Produk Bundling &bull; Paket Starter &bull; Solusi Turnkey
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white sm:text-2xl">
+                            Tersedia dalam Paket Starter Cepat Pakai &amp; Opsi Bundling Terpadu
+                        </h3>
+                        <p class="max-w-3xl text-sm leading-relaxed text-sage-200">
+                            <strong>REGEN bukan sekadar modul terpisah:</strong> Kami menyediakan opsi <strong>Paket Starter</strong> (hardware sensor + software farm management + kalkulator HPP siap pakai untuk kebun pemula) serta <strong>Bundling Solusi Turnkey</strong> (sensor multi-titik, fertigasi otomatis, pemetaan spasial Terra, dan konsultasi agronomi) guna menekan biaya investasi awal petani dan koperasi.
+                        </p>
+                    </div>
+                    <div class="shrink-0">
+                        <a href="{{ route('contact', ['type' => 'enterprise_demo']) }}" class="inline-flex items-center justify-center rounded-xl bg-sage-400 px-5 py-3 text-xs font-bold uppercase tracking-wider text-forest-950 shadow-sm transition hover:bg-sage-300">
+                            Konsultasi Paket Starter &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 grid gap-8 lg:grid-cols-2">
                 <div class="rounded-3xl border border-ivory-300 bg-ivory-50 p-8">
-                    <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-olive-700 border border-ivory-300">Opsi A &bull; Modular Deployment</span>
-                    <h3 class="mt-4 text-2xl font-semibold text-charcoal-900">Mulai dari Modul yang Paling Dibutuhkan</h3>
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-olive-700 border border-ivory-300">Opsi A &bull; Modular Deployment &amp; Paket Starter</span>
+                        <span class="rounded-full bg-sage-100 px-2.5 py-0.5 text-[11px] font-semibold text-forest-800 border border-sage-300">Hemat Biaya Awal</span>
+                    </div>
+                    <h3 class="mt-4 text-2xl font-semibold text-charcoal-900">Mulai Cepat dengan Paket Starter &amp; Modul Esensial</h3>
                     <p class="mt-2 text-sm leading-relaxed text-charcoal-600">
-                        Gunakan modul perangkat lunak atau unit pemantauan secara independen sesuai prioritas masalah lapangan.
+                        Gunakan modul perangkat lunak atau ambil <strong>Paket Starter REGEN</strong> (1 Node Sensor + Akses Cloud Farm Management) sesuai prioritas masalah lapangan tanpa beban belanja modal besar.
                     </p>
                     <ul class="mt-6 space-y-3 text-sm text-charcoal-700">
-                        <li class="flex items-start gap-2.5"><span class="mt-1.5 h-2 w-2 rounded-full bg-olive-600"></span><span><strong>Software-First:</strong> Gunakan REGEN Farm Management &amp; Kalkulator HPP/BEP langsung melalui browser tanpa perangkat keras IoT.</span></li>
-                        <li class="flex items-start gap-2.5"><span class="mt-1.5 h-2 w-2 rounded-full bg-olive-600"></span><span><strong>Targeted Sensing:</strong> Pasang hanya REGEN SoilSense pada blok pembibitan kritis atau EnviroSense pada greenhouse.</span></li>
-                        <li class="flex items-start gap-2.5"><span class="mt-1.5 h-2 w-2 rounded-full bg-olive-600"></span><span><strong>Biaya Awal Efisien:</strong> Cocok untuk petani mandiri, kebun percontohan, dan validasi bertahap.</span></li>
+                        <li class="flex items-start gap-2.5"><span class="mt-1.5 h-2 w-2 rounded-full bg-olive-600"></span><span><strong>Paket Starter Cepat Tanam:</strong> Bundling unit SoilSense portabel + aplikasi pencatatan kebun dan kalkulator HPP gratis setup awal.</span></li>
+                        <li class="flex items-start gap-2.5"><span class="mt-1.5 h-2 w-2 rounded-full bg-olive-600"></span><span><strong>Software-First:</strong> Gunakan REGEN Farm Management &amp; Kalkulator HPP/BEP langsung melalui browser tanpa perangkat keras IoT jika belum membutuhkan sensor.</span></li>
+                        <li class="flex items-start gap-2.5"><span class="mt-1.5 h-2 w-2 rounded-full bg-olive-600"></span><span><strong>Targeted Sensing:</strong> Pasang hanya REGEN SoilSense pada blok pembibitan kritis atau EnviroSense pada greenhouse bertahap.</span></li>
+                        <li class="flex items-start gap-2.5"><span class="mt-1.5 h-2 w-2 rounded-full bg-olive-600"></span><span><strong>Investasi Terukur:</strong> Sangat ideal untuk petani mandiri, kelompok tani pemula, kebun percontohan, dan validasi agronomi.</span></li>
                     </ul>
                 </div>
 
                 <div class="rounded-3xl border border-forest-800 bg-forest-950 p-8 text-ivory-50">
-                    <span class="rounded-full bg-forest-800 px-3 py-1 text-xs font-semibold text-sage-200">Opsi B &bull; Integrated Deployment</span>
-                    <h3 class="mt-4 text-2xl font-semibold text-white">Sinergi Penuh Sensor, Operasional &amp; Finansial</h3>
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span class="rounded-full bg-forest-800 px-3 py-1 text-xs font-semibold text-sage-200">Opsi B &bull; Full Bundling &amp; Integrated Ecosystem</span>
+                        <span class="rounded-full bg-forest-900 px-2.5 py-0.5 text-[11px] font-semibold text-sage-300 border border-forest-700">Paket Lengkap Korporasi</span>
+                    </div>
+                    <h3 class="mt-4 text-2xl font-semibold text-white">Bundling Terpadu Sinergi Sensor, Irigasi &amp; Finansial</h3>
                     <p class="mt-2 text-sm leading-relaxed text-sage-200">
-                        Seluruh aliran data lahan, perangkat lapangan, aktivitas pekerja, hingga laporan keuangan bermuara ke satu pusat komando.
+                        Paket komprehensif mengintegrasikan seluruh perangkat keras, otomatisasi irigasi, analitik intelijen, dan konsolidasi multi-kebun dalam satu kontrak implementasi.
                     </p>
                     <ul class="mt-6 space-y-3 text-sm text-ivory-100">
-                        <li class="flex items-start gap-2.5"><span class="mt-1.5 h-2 w-2 rounded-full bg-sage-400"></span><span><strong>Closed-Loop Agronomy:</strong> Pembacaan SoilSense &amp; EnviroSense memicu Rule-Based Advisory untuk jadwal irigasi WaterSense dan tugas lapangan.</span></li>
-                        <li class="flex items-start gap-2.5"><span class="mt-1.5 h-2 w-2 rounded-full bg-sage-400"></span><span><strong>Traceability Siklus Penuh:</strong> Setiap pengeluaran saprotan dan aktivitas petak otomatis terhubung ke perhitungan HPP siklus tanam.</span></li>
-                        <li class="flex items-start gap-2.5"><span class="mt-1.5 h-2 w-2 rounded-full bg-sage-400"></span><span><strong>Multi-Farm Governance:</strong> Konsolidasi lintas kebun di REGEN Enterprise lengkap dengan jejak audit.</span></li>
+                        <li class="flex items-start gap-2.5"><span class="mt-1.5 h-2 w-2 rounded-full bg-sage-400"></span><span><strong>Bundling Turnkey Komplit:</strong> Menggabungkan SoilSense + WaterSense + EnviroSense + Terra + Enterprise Suite dalam satu paket instalasi lapang.</span></li>
+                        <li class="flex items-start gap-2.5"><span class="mt-1.5 h-2 w-2 rounded-full bg-sage-400"></span><span><strong>Closed-Loop Agronomy:</strong> Pembacaan sensor otomatis menginstruksikan katup irigasi WaterSense dan menghasilkan advisory budidaya presisi.</span></li>
+                        <li class="flex items-start gap-2.5"><span class="mt-1.5 h-2 w-2 rounded-full bg-sage-400"></span><span><strong>Traceability Siklus Penuh:</strong> Setiap input benih, pupuk, dan jam kerja otomatis terakumulasi dalam kalkulasi HPP dan evaluasi margin riil.</span></li>
+                        <li class="flex items-start gap-2.5"><span class="mt-1.5 h-2 w-2 rounded-full bg-sage-400"></span><span><strong>Multi-Farm Governance:</strong> Satu konsol komando untuk puluhan kebun, ratusan hektar lahan, dan hak akses bertingkat aman (RBAC).</span></li>
                     </ul>
                 </div>
             </div>

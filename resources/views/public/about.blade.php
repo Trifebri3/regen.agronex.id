@@ -23,6 +23,16 @@
                         Website dan platform digital <strong>REGEN (regen.agronex.id)</strong> berdiri secara khusus sebagai ekosistem produk mandiri — mencakup katalog solusi modular, aplikasi operasional manajemen kebun, kalkulator intelijen bisnis tani, dokumentasi riset prototipe, repositori HAKI, serta arsitektur multi-tenant enterprise — tanpa mencampuradukkan konten profil korporat umum dari situs utama <a href="https://agronex.id" target="_blank" rel="noopener noreferrer" class="font-semibold text-forest-800 underline">agronex.id</a>.
                     </p>
 
+                    <div class="rounded-2xl border-2 border-forest-800 bg-forest-950 p-5 text-ivory-100 shadow-sm">
+                        <span class="rounded-full bg-sage-400 px-3 py-0.5 text-[11px] font-bold uppercase tracking-wider text-forest-950">
+                            Model Penyediaan &bull; Bundling &amp; Starter
+                        </span>
+                        <h3 class="mt-2 text-base font-bold text-white">REGEN sebagai Produk Bundling &amp; Paket Starter Unggulan</h3>
+                        <p class="mt-1 text-xs leading-relaxed text-sage-200">
+                            Untuk mempercepat modernisasi agribisnis petani di Indonesia, REGEN dipasarkan melalui <strong>Paket Starter</strong> (paket masuk ramah biaya modal awal menggabungkan probe sensor dan akses platform) serta <strong>Paket Bundling Terintegrasi</strong> bagi kelompok tani, koperasi, dan korporasi perkebunan modern.
+                        </p>
+                    </div>
+
                     <div class="grid gap-4 pt-4 sm:grid-cols-3">
                         <x-stat-card label="Modul Produk" :value="$productsCount.' Modul'" hint="Modular & Integrated" />
                         <x-stat-card label="Hierarki Data" value="5 Tingkat" hint="Platform hingga Plot/Device" />
