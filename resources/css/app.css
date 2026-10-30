@@ -1,0 +1,58 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../views/**/*.blade.php';
+@source '../js/**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+    /* Deep Forest Green */
+    --color-forest-950: #0c1b13;
+    --color-forest-900: #132a1e;
+    --color-forest-800: #1b3b2b;
+    --color-forest-700: #25523b;
+    --color-forest-600: #316c4e;
+    --color-forest-500: #428964;
+
+    /* Sage Green */
+    --color-sage-700: #45624a;
+    --color-sage-600: #56785c;
+    --color-sage-500: #6b8f71;
+    --color-sage-400: #8cb092;
+    --color-sage-300: #b2ccb6;
+    --color-sage-200: #d3e3d6;
+    --color-sage-100: #eaf2eb;
+    --color-sage-50: #f4f8f5;
+
+    /* Muted Olive */
+    --color-olive-800: #3f4630;
+    --color-olive-700: #535c3f;
+    --color-olive-600: #6a7353;
+    --color-olive-500: #838d69;
+    --color-olive-200: #dce0d1;
+    --color-olive-100: #eef0e8;
+
+    /* Warm Ivory */
+    --color-ivory-300: #dfd9ca;
+    --color-ivory-200: #ede9de;
+    --color-ivory-100: #f6f4ed;
+    --color-ivory-50: #fbfaf6;
+
+    /* Charcoal */
+    --color-charcoal-950: #121513;
+    --color-charcoal-900: #1c201d;
+    --color-charcoal-800: #2a302c;
+    --color-charcoal-700: #3d443f;
+    --color-charcoal-600: #535b55;
+    --color-charcoal-500: #6c756e;
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        background-color: var(--color-ivory-50);
+        color: var(--color-charcoal-900);
+    }
+}
